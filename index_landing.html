@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lattitude</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="HWstyle.css">
+</head>
+
+<body> 
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index_landing.html">Lattitude</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="max_temp_visualization.html">Max Temperature</a></li>
+                                <li><a href="humidity_visualization.html">Humidity </a></li>
+                                <li><a href="cloudiness_visualization.html">Cloudiness</a></li>
+                                <li><a href="wind_speed_visualization.html">Wind Speed</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="comparisons_page.html">Comparisons</a></li>
+                    <li><a href="weather_data_page.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>   
+    
+
+    <div class="row">
+    <div class="col-md-6 col-sm-4">
+        <div class="panel panel-default summary">
+            <div class="panel-body">
+                <h1>Summary: Latitude vs X</h1>
+                <hr>
+                    <img src="Max_Temp.png" class="Max_Temp_Chart">
+                    <hr>
+                    <p><em> The purpose of this project was to analyze four distinct weather factors 
+                        (temperature, cloudiness, humidity and wind speed) in search of a relationship 
+                        between latitudinal proximity to the equator. The methodology applied was to 
+                        collect weather data for over 500 randomly selected cities using the OpenWeatherMap API 
+                        in order to create an operational dataset for analysis. </em></p>
+                        <br>
+                    <p><em> To facilitate analysis MatPlotLib was used to transform the data into 
+                        visually representative charts, each of which can be viewed in greater detail by following 
+                        the links provided along with the observations made and conclusions drawn. The source data 
+                        is also available in this site for those interested in learning more about the measurement 
+                        locations, factors and ranges used in the study. </em></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-4">
+            <div class="panel panel-default summary">
+                <div class="panel-body">
+                <h1>Visualizations</h1>
+                <h5>Click on any plot to get an in-depth analysis</h5>
+                <hr>
+                <div class="Multi_Table">
+                    <a href="max_temp_visualization.html"><img src="Max_Temp.png" class="vizThumb"></a>
+                </div>
+                <br>
+                <div class="Multi_Table">
+                    <a href="humidity_visualization.html"><img src="Humidity.png" class="vizThumb"></a>
+                </div>
+                <br>
+                <div class="Multi_Table">
+                    <a href="cloudiness_visualization.html"><img src="Cloudiness.png" class="vizThumb"></a>
+                </div>
+                <br>
+                <div class="Multi_Table">
+                    <a href="wind_speed_visualization.html"><img src="Wind_Speed.png" class="vizThumb"></a>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
